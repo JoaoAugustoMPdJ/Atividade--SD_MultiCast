@@ -20,7 +20,7 @@ Cada um desses códigos aborda desafios comuns em sistemas distribuídos, como c
 - **Threads:** Utilizadas para escutar mensagens enquanto permite que o usuário envie outras.  
 
 ### Desafios  
-- **Fiabilidade:** Como o UDP não garante entrega de pacotes, mensagens podem ser perdidas.  
+- **Confiabilidade:** Como o UDP não garante entrega de pacotes, mensagens podem ser perdidas.  
 - **Segurança:** O multicast não possui criptografia embutida, tornando a comunicação vulnerável.  
 
 ## 2. Replicação e Reconciliação de Dados  
@@ -33,7 +33,7 @@ Cada um desses códigos aborda desafios comuns em sistemas distribuídos, como c
 
 ### Desafios  
 - **Entrega Fora de Ordem:** Como as mensagens são escritas com delays aleatórios, a ordem pode diferir entre réplicas.  
-- **Reconciliador Eficiente:** Para garantir que todas as réplicas tenham as mesmas mensagens sem duplicatas.  
+- **Reconciliador Eficiente:** Para garantir que todas as réplicas tenham as mesmas mensagens ao final da execução sem duplicatas ou divergências.  
 
 ## 3. Controle de Acesso Distribuído com Token  
 **Objetivo:** Implementar um sistema onde diferentes nós solicitam acesso a um recurso compartilhado e o controle é garantido por um token.  
